@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <style>
+
+.etq-brand{
+  font-size: 2rem;
+  font-weight: bold;
+  padding-left: 20px;
+  letter-spacing: 0.7rem;
+}
+body{
+  margin:0;
+  padding:0;
+}
+.scrolling-active{
+  background-color: white!important;
+ border: 1px solid rgba(0, 0, 0, .1);
+ transition: background-color 200ms linear;
+}
+nav{
+  margin: 10px 10px;
+}
+.main-img{
+  width: 100%;
+  height: 100vh;
+}
+#main-section{
+  margin-bottom: 5%;
+  padding-right: 0!important;
+  padding-left: 0;
+}
+.right-ul li a{
+  color: #000!important;
+}
+.underlined{
+  text-decoration:underline;
+}
+.center{
+  margin:auto;
+
+}
+h3{
+  font-size: 1rem;
+  line-height: 20px;
+}
+h2{
+  font-size: 28px;
+  line-height: 35px;
+}
+a{
+  text-decoration: none;
+  color: #000;
+}
+div > p{
+  font-size: 13px;
+}
+#about{
+  margin:100px 35px 70px;
+}
+.col h2{
+  font-size: 13px;
+  font-weight: bold;
+}
+.col p{
+  line-height: 20px;
+}
+form{
+  margin-bottom: 100px;
+}
+form input{
+
+  outline:0;
+  border-width: 0 0 2px;
+  width: 380px;
+  opacity: 0.2;
+  margin: 5px 15px;
+}
+form button{
+  border-style: none;
+  background-color: white;
+
+  border-bottom: 1px solid black;
+  border-bottom-width: 20%;
+
+}
+form{
+  display: inline;
+}
+.footer-para{
+  display: inline;
+  margin-left: auto;
+  position: absolute;
+  right: 0;
+}
+footer{
+  margin-bottom: 50px;
+}
+ul{
+  list-style: none;
+  text-align: left;
+
+}
+video{
+  object-fit: fill;
+
+}
+.left-nav-item{
+  color: white!important;
+
+
+}
+.third-section{
+  margin: 2rem 2rem;
+}
+.first-image-flagship{
+  max-height: 482.4px;
+  width: 100%!important;
+  object-fit: cover;
+
+}
+
+ul button{
+  border:none;
+  background-color:inherit;
+}
+/* @media(min)
+.flagship-row{
+  max-height:482.4px;
+} */
+.row, .card{
+  width: 100%;
+}
+.row{
+  margin-right: 0;
+  margin-left: 0;
+}
+.card{
+  margin-left: 4%;
+}
+
+
+/*popup card*/
+.popup-card{
+  position: fixed;
+  top:1%;
+  right:1%;
+
+  transition:200ms ease-in-out;
+
+  border: 1px solid rgba(0,0,0,.5);
+  border-radius:10px;
+
+  z-index: 60000;
+  background-color:white;
+  width:500px;
+  max-width:35%;
+  transform:scale(0);
+}
+.popup-card.active{
+  transform:scale(1);
+}
+
+#overlay{
+  position: fixed;
+  opacity: 0;
+    transition:200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color:rgba(0,0,0,.5);
+  pointer-events: none;
+}
+#overlay.active{
+  opacity: 1;
+  pointer-events:all;
+}
+
+/*inside of the popup card styles*/
+.popup-text{
+  margin: 25px 10px;
+}
+.popup-registration{
+  margin:10px 10px 25px;
+  display:flex;
+  justify-content: space-between;
+}
+
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+
+
+    <script src="js.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </body>
+</html>
+
