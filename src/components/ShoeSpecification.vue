@@ -70,3 +70,9 @@ export default {
     name: 'ShoeSpecification'
 }
 </script>
+
+<style scoped>
+.modular-section{
+  margin-bottom:10%;
+}
+</style>
